@@ -10,7 +10,7 @@ connectDB();
 
 //express app
 const app=express();
-app.use(cors(({ origin: "https://e-commerce-poe9.vercel.app/" })));
+app.use(cors(({ origin: "https://e-commerce-poe9.vercel.app" })));
 app.use(express.json());
 
 //routes
