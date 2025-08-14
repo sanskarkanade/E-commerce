@@ -10,7 +10,7 @@ connectDB();
 
 //express app
 const app=express();
-app.use(cors());
+app.use(cors(({ origin: "https://e-commerce-lwyf-git-main-sanskarkanades-projects.vercel.app/" })));
 app.use(express.json());
 
 //routes
