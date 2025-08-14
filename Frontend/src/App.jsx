@@ -14,7 +14,7 @@ import Login from "./components/Login";
 import Register from "./components/Register";
 import ProfilePage from "./components/ProfilePage";
 import AddProduct from "./components/AddProduct";
-import Cart from "./components/cart";
+import Cart from "./components/Cart";
 import Success from "./components/Success";
 import Cancel from "./components/Cancel";
 import Orders from "./components/Orders";
