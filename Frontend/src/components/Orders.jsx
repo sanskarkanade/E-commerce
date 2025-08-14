@@ -21,7 +21,7 @@ const Orders = () => {
           throw new Error("Please log in to view your orders.");
         }
 
-        const res = await fetch("http://localhost:5000/api/orders", {
+        const res = await fetch("https://e-commerce-ah0x.onrender.com/api/orders", {
           headers: {
             Authorization: `Bearer ${token}`,
           },

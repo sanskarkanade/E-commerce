@@ -10,7 +10,7 @@ const Cart = () => {
     const token = localStorage.getItem("token");
 
     try {
-      const res = await fetch("http://localhost:5000/api/cart", {
+      const res = await fetch("https://e-commerce-ah0x.onrender.com/api/cart", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -51,7 +51,7 @@ const Cart = () => {
     const token = localStorage.getItem("token");
 
     try {
-      const res = await fetch(`http://localhost:5000/api/cart/delete`, {
+      const res = await fetch(`https://e-commerce-ah0x.onrender.com/api/cart/delete`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",

@@ -25,7 +25,7 @@ const Result = () => {
     }
 
     try {
-      const res = await fetch("http://localhost:5000/api/payment/create-checkout-session", {
+      const res = await fetch("https://e-commerce-ah0x.onrender.com/api/payment/create-checkout-session", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -72,7 +72,7 @@ const Result = () => {
     }
 
     try {
-      const res = await fetch("http://localhost:5000/api/cart/add", {
+      const res = await fetch("https://e-commerce-ah0x.onrender.com/api/cart/add", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

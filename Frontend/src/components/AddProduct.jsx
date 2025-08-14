@@ -22,7 +22,7 @@ const AddProductPage = () => {
     const token = localStorage.getItem("token");
 
     try {
-      const res = await fetch("http://localhost:5000/api/product/", {
+      const res = await fetch("https://e-commerce-ah0x.onrender.com/api/product/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -44,7 +44,7 @@ const Home = () => {
   useEffect(() => {
     const fetchData = async (searchTerm, setData, setLoading, setError) => {
       try {
-        const res = await fetch(`http://localhost:5000/api/product?search=${searchTerm}`);
+        const res = await fetch(`https://e-commerce-ah0x.onrender.com/api/product?search=${searchTerm}`);
         if (!res.ok) throw new Error(`Failed to fetch ${searchTerm}`);
         const data = await res.json();
         setData(data);

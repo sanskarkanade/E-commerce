@@ -24,7 +24,7 @@ const Search = ({ searchQuery }) => {
         }
 
         const res = await fetch(
-          `http://localhost:5000/api/product?search=${encodeURIComponent(searchQuery)}`
+          `https://e-commerce-ah0x.onrender.com/api/product?search=${encodeURIComponent(searchQuery)}`
         );
         if (!res.ok) throw new Error("Error fetching search results");
 
