@@ -10,7 +10,7 @@ connectDB();
 
 //express app
 const app=express();
-app.use(cors(({ origin: "https://e-commerce-git-main-sanskarkanades-projects.vercel.app/" })));
+app.use(cors(({ origin: "https://e-commerce-six-fawn-36.vercel.app/" })));
 app.use(express.json());
 
 //routes
