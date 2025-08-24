@@ -28,8 +28,8 @@ router.post("/create-checkout-session", protect, async (req, res) => {
       payment_method_types: ["card"],
       line_items: lineItems,
       mode: "payment",
-      success_url: "http://localhost:5173/success",
-      cancel_url: "http://localhost:5173/cancel",
+      success_url: "https://e-commerce-poe9.vercel.app/success",
+      cancel_url: "https://e-commerce-poe9.vercel.app/cancel",
     });
 
     // Map cart items to order items

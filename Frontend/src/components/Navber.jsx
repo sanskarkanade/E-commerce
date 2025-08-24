@@ -55,7 +55,7 @@ const Navbar = ({ onsearchchange }) => {
   const navLinks = [
     { to: "/", label: "Home" },
     { to: "/about", label: "About Us" },
-    { to: "/contact", label: "Contact Us" },
+    { to: "/mobile", label: "Contact Us" },
     { to: "/help", label: "Help" },
     ...(user?.isAdmin ? [{ to: "/add", label: "Add Product" }] : []),
   ];
@@ -65,7 +65,7 @@ const Navbar = ({ onsearchchange }) => {
       {/* Logo */}
       <div className="flex items-center gap-3 cursor-pointer">
         <img
-          src="./src/assets/logo1.jpg"
+          src="./src/components/logo1.jpg"
           className="h-10 w-10 rounded-full object-cover"
           alt="Eshany Bazaar Logo"
           onClick={() => navigate("/")}
