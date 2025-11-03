@@ -3,6 +3,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { BsPerson, BsCart } from "react-icons/bs";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import logo from "./logo1.jpg";
 
 const Navbar = ({ onsearchchange }) => {
   const navigate = useNavigate();
@@ -65,7 +66,7 @@ const Navbar = ({ onsearchchange }) => {
       {/* Logo */}
       <div className="flex items-center gap-3 cursor-pointer">
         <img
-          src="./src/components/logo1.jpg"
+          src={logo}
           className="h-10 w-10 rounded-full object-cover"
           alt="Eshany Bazaar Logo"
           onClick={() => navigate("/")}
